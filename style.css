@@ -34,27 +34,41 @@ body {
 
 }
 
+
 @keyframes moveball {
     0% {
-        transform: translateX(0) rotate(0deg)
+        transform: translateX(0); /* Start position */
     }
-
+    25% {
+        transform: translateX(30px); /* Move right */
+    }
     50% {
-        transform: translateX(0) rotate(0deg)
+        transform: translateX(0); /* Back to center */
     }
-
+    75% {
+        transform: translateX(-30px); /* Move left */
+    }
     100% {
-        transform: translateX(0px) rotate(0deg)
+        transform: translateX(0); /* Back to center */
     }
 }
+
 
 @keyframes rotateball {
     0% {
         transform: rotateZ(0deg)
     }
 
+    25% {
+        transform: rotateZ(30deg)
+    }
+
     50% {
         transform: rotateZ(0deg)
+    }
+
+    75% {
+        transform: rotateZ(-30deg)
     }
 
     100% {
