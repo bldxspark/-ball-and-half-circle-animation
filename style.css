@@ -1,0 +1,63 @@
+body {
+    background-color: gray;
+}
+
+.circlewhite {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.halfcircle {
+    background-color: rgb(119, 0, 255);
+    height: 200px;
+    width: 400px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    animation: rotateball 3s linear infinite;
+}
+
+.ball {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: moveball 3s linear infinite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@keyframes moveball {
+    0% {
+        transform: translateX(0) rotate(0deg)
+    }
+
+    50% {
+        transform: translateX(0) rotate(0deg)
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg)
+    }
+}
+
+@keyframes rotateball {
+    0% {
+        transform: rotateZ(0deg)
+    }
+
+    50% {
+        transform: rotateZ(0deg)
+    }
+
+    100% {
+        transform: rotateZ(0deg)
+    }
+}
